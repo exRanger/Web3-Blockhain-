@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "ESNext",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      
+      "noEmitOnError": false,
+      "moduleResolution": "node",
+      // allow works with packs, via using common js
+      // like common packet with import (require() module.export) = common js
+      // import Moment from 'moment'
+      // without esModule результат undefined
+      "esModuleInterop": true,
+      // if any lib not default import
+      // loaders like a ts-loader or babel-loader automaticly creates all of them
+      // ether like import: import * as React from 'react'
+      // is such a just to write import React from 'react'
+      "allowSyntheticDefaultImports": true,
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    }
+  }
