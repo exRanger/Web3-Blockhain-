@@ -11,6 +11,11 @@ interface Env {
   path: string;
 }
 
+/**
+ * @description Root webpack function config.
+ * @author Zagirov I.
+ * @public
+ */
 export default (env: Env): Configuration => {
   const paths: IBuildPaths = {
     output: path.resolve(__dirname, 'dist'),
