@@ -27,6 +27,5 @@ export default (env: Env): Configuration => {
     mode: env.mode,
     path: paths,
   });
-   
   return config;
 }
